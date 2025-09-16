@@ -1,36 +1,38 @@
-# Customer Churn Prediction Application
+🛒 Customer Churn Prediction Application
 
-### Case Study of Customer Churn Prediction Model
-Creating churn prediction models involves using historical customer data to predict the likelihood of the current customer leaving or continuing with a particular service/product. The data used for the predictive models include product usage data and direct customer feedback. Besides, the predictive models identify the different trends and patterns in the data to forecast customer churn.
+A Flask web application that predicts customer churn for e-commerce businesses using machine learning
 
-Consider an e-commerce company with historical data on how their clients have interacted with their services. The company wants to know the likelihood of customers churning so they can launch targeted marketing campaigns.
+📋 Project Overview
+This application helps e-commerce companies predict which customers are likely to stop using their services. By analyzing historical customer data and behavioral patterns, businesses can identify at-risk customers and implement targeted retention strategies.
+🎯 Business Problem
+E-commerce companies need to:
 
-[Dataset source](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction/data)
+✅ Identify customers likely to churn before they leave
+✅ Launch targeted marketing campaigns to retain valuable customers
+✅ Reduce customer acquisition costs by improving retention
+✅ Make data-driven decisions about customer relationship management
 
+🔍 Dataset Features
+The model uses 18 key customer attributes to make predictions:
 
-The data is in .xlsx format with the following features:
+<img width="801" height="218" alt="image" src="https://github.com/user-attachments/assets/06ab8316-04ec-4adb-9eb5-b46c3355caf7" />
 
-| Feature Name               | Description                                                                        |
-|----------------------------|------------------------------------------------------------------------------------|
-| CustomerID                 | Unique customer ID                                                                 |
-| Churn                      | Flag indicating whether the customer churned (1) or not (0)                        |
-| Tenure                     | Tenure of the customer in the organization                                          |
-| PreferredLoginDevice       | The preferred device used by the customer to log in (e.g., mobile, web)            |
-| CityTier                   | City tier classification (e.g., Tier 1, Tier 2, Tier 3)                            |
-| WarehouseToHome            | Distance between the warehouse and the customer’s home                             |
-| PreferredPaymentMode       | Preferred payment method used by the customer (e.g., credit card, debit card, cash on delivery) |
-| Gender                     | The gender of the customer                                                         |
-| HourSpendOnApp             | Number of hours spent on the mobile application or website                         |
-| NumberOfDeviceRegistered   | Total number of devices registered to the customer’s account                       |
-| PreferedOrderCat           | Preferred order category of the customer in the last month                         |
-| SatisfactionScore          | Customer’s satisfaction score with the service                                     |
-| MaritalStatus              | Marital status of the customer                                                     |
-| NumberOfAddress            | Total number of addresses added to the customer’s account                          |
-| OrderAmountHikeFromlastYear| Percentage increase in order value compared to last year                           |
-| CouponUsed                 | Total number of coupons used by the customer in the last month                     |
-| OrderCount                 | Total number of orders placed by the customer in the last month                    |
-| DaySinceLastOrder          | Number of days since the customer’s last order                                     |
-| CashbackAmount             | Average cashback received by the customer in the last month                        |
+📊 Data Source: https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction/data
+
+🛠️ Tech Stack
+
+Backend: Flask 1.1.1
+Machine Learning: scikit-learn 0.22.1
+Data Processing: pandas, numpy
+Visualization: matplotlib
+Deployment: gunicorn (production ready)
+
+📈 How It Works
+
+Data Input: Enter customer information through the web form
+Feature Processing: The app processes and encodes the input data
+Prediction: Machine learning model calculates churn probability
+Results: Display prediction with confidence score and recommendations
 
 
 
